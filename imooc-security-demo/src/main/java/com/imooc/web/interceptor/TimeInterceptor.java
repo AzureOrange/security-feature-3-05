@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * 拦截配置：拦截器
+ * 拦截配置：拦截器（不足：拿不到请求的参数值）
  *
  */
 @Component
