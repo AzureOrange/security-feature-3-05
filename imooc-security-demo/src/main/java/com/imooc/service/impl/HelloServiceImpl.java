@@ -1,16 +1,9 @@
-/**
- * 
- */
 package com.imooc.service.impl;
 
 import org.springframework.stereotype.Service;
 
 import com.imooc.service.HelloService;
 
-/**
- * @author zhailiang
- *
- */
 @Service
 public class HelloServiceImpl implements HelloService {
 

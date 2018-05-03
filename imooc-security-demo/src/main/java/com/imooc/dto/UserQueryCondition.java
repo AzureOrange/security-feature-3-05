@@ -1,12 +1,5 @@
-/**
- * 
- */
 package com.imooc.dto;
 
-/**
- * @author zhailiang
- *
- */
 public class UserQueryCondition {
 	
 	private String username;

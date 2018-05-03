@@ -1,21 +1,12 @@
-/**
- * 
- */
 package com.imooc.dto;
-
-import java.util.Date;
-
-import javax.validation.constraints.Past;
-
-import org.hibernate.validator.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.imooc.validator.MyConstraint;
+import org.hibernate.validator.constraints.NotBlank;
 
-/**
- * @author zhailiang
- *
- */
+import javax.validation.constraints.Past;
+import java.util.Date;
+
 public class User {
 
 	// 对部分接口部分字段不返回（如password）

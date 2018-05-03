@@ -1,19 +1,11 @@
-/**
- * 
- */
 package com.imooc.validator;
+
+import com.imooc.service.HelloService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.imooc.service.HelloService;
-
-/**
- * @author zhailiang
- *
- */
 public class MyConstraintValidator implements ConstraintValidator<MyConstraint, Object> {
 
 	@Autowired
