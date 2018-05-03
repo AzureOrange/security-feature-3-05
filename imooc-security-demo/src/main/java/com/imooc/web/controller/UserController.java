@@ -79,9 +79,11 @@ public class UserController {
 	}
 
 
-	@GetMapping("/{id:\\d+}") // 对入参进行正则验证
+	@GetMapping("/{id:\\d+}")
 	@JsonView(User.UserDetailView.class)
 	public User getInfo(@PathVariable String id) {
+//		throw new RuntimeException("user not exist");
+		System.out.println("进入getInfo服务");
 		User user = new User();
 		user.setUsername("tom");
 		return user;
