@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * 拦截配置：拦截器（不足：拿不到请求的参数值）
+ * 拦截配置：拦截器
+ * 			优点：既可以拿到原始的请求，也可以拿到相应的处理方法信息
+ * 			不足：拿不到请求的参数值与返回值
  *
  */
 @Component
@@ -26,7 +28,7 @@ public class TimeInterceptor implements HandlerInterceptor {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		System.out.println("preHandle");
-		
+
 		System.out.println(((HandlerMethod)handler).getBean().getClass().getName()); // 调用的类名
 		System.out.println(((HandlerMethod)handler).getMethod().getName()); // 调用的方法名
 		

@@ -11,6 +11,10 @@ import java.util.Date;
 
 /**
  * 拦截配置：切片
+ * 		优点：可以拿到请求的参数值与返回值
+ * 		不足：拿不到原始的http响应与请求的对象
+ *
+ * 	拦截器执行顺序：Filter --> Interceptor -->  ControllerAdvice(自定义异常)  -->  Aspect -->  Controller
  *
  */
 @Aspect

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author zhailiang
+ * 拦截器部分配置
  *
  */
 @Configuration
@@ -25,7 +25,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	@Autowired
 	private TimeInterceptor timeInterceptor;
 
-	// 配置拦截器，让拦截器生效（过滤器不用这个配置）
+	// 配置拦截器，让拦截器生效（过滤器和切片不用这个配置）
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(timeInterceptor);

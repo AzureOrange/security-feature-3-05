@@ -10,7 +10,9 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * 拦截服务：过滤器（不足：不知道哪个控制器中的哪个方法处理的）
+ * 拦截服务：过滤器
+ * 		优点：拿到原始的请求
+ * 		不足：拿不到处理请求方法的信息
  *
  */
 @Component
