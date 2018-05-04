@@ -1,4 +1,4 @@
-package com.imooc.security;
+package com.imooc.security.browser;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

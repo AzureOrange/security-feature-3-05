@@ -1,4 +1,4 @@
-package com.imooc.security.support;
+package com.imooc.security.browser.support;
 
 /**
  * 给客户端返回时用的json
