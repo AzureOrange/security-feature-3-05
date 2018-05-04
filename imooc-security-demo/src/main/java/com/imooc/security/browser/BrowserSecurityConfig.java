@@ -36,15 +36,15 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 
 		http.formLogin() // 表单登录（第一次访问会弹出登录页面）
-				.loginPage("/authentication/require")
-				.loginProcessingUrl("/authentication/form")
+				.loginPage("/authentication/require")  // 登录地址
+				.loginProcessingUrl("/authentication/form")  // 验证地址
 				.successHandler(imoocAuthenticationSuccessHandler)
 				.failureHandler(imoocAuthenticationFailureHandler)
 //		http.httpBasic()   // 弹出登录窗口
 				.and()
 				.authorizeRequests()
 				.antMatchers("/authentication/require",
-						securityProperties.getBrowser().getLoginPage()).permitAll()
+						securityProperties.getBrowser().getLoginPage()).permitAll()  // 过滤掉登录地址与登录界面
 				.anyRequest()
 				.authenticated()   // 需要认证
 				.and()

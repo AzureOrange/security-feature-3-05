@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import com.imooc.security.core.properties.SecurityProperties;
 
 /**
- * 安全核心配置：让读取器生效
+ * 安全核心配置：让读取配置器生效
  *
  */
 @Configuration

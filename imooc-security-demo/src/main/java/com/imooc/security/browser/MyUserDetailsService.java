@@ -37,7 +37,7 @@ public class MyUserDetailsService implements UserDetailsService {
 //		String password = passwordEncoder.matches("123456");  // 加密--注册存入数据库
 		String password = passwordEncoder.encode("123456");  // 解密
 
-		logger.info("数据库密码是:"+password);
+		logger.info("数据库密码是:" + password);
 		// 前两个是认证   中间四个是判断（必须全通过登录才能通过）  最后是授权范围
 		return new User(username, password,
 				true, true, true, true,

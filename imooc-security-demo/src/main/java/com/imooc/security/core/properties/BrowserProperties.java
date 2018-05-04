@@ -1,7 +1,7 @@
 package com.imooc.security.core.properties;
 
 /**
- *
+ * 返回类型：JSON 或 HTML
  *
  */
 public class BrowserProperties {

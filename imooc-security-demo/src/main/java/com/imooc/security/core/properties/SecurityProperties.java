@@ -3,7 +3,7 @@ package com.imooc.security.core.properties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- *
+ * 公用的读取配置
  *
  */
 @ConfigurationProperties(prefix = "imooc.security")
