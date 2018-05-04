@@ -3,6 +3,7 @@ package com.imooc.web.controller;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.imooc.dto.User;
 import com.imooc.dto.UserQueryCondition;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.springframework.data.domain.Pageable;
@@ -62,6 +63,7 @@ public class UserController {
 
 	@GetMapping
 	@JsonView(User.UserSimpleView.class)
+	@ApiOperation(value = "用户查询服务")
 	public List<User> query(UserQueryCondition condition,
 			@PageableDefault(page = 2, size = 17, sort = "username,asc") Pageable pageable) {
 
@@ -79,9 +81,11 @@ public class UserController {
 	}
 
 
-	@GetMapping("/{id:\\d+}") // 对入参进行正则验证
+	@GetMapping("/{id:\\d+}")
 	@JsonView(User.UserDetailView.class)
 	public User getInfo(@PathVariable String id) {
+//		throw new RuntimeException("user not exist");
+		System.out.println("进入getInfo服务");
 		User user = new User();
 		user.setUsername("tom");
 		return user;
