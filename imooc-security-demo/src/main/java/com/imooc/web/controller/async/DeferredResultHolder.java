@@ -1,13 +1,10 @@
-/**
- * 
- */
 package com.imooc.web.controller.async;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.async.DeferredResult;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 模拟存储消息的存储器

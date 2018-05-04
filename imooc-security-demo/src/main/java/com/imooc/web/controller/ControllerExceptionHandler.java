@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.imooc.web.controller;
 
 import com.imooc.exception.UserNotExistException;

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.imooc.web.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;

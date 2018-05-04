@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.imooc.web.interceptor;
 
 import org.springframework.stereotype.Component;

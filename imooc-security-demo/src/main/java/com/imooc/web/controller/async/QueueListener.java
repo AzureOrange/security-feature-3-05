@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.imooc.web.controller.async;
 
 import org.apache.commons.lang.StringUtils;

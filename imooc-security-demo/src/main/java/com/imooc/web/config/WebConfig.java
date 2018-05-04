@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.imooc.web.config;
 
 import com.imooc.web.filter.TimeFilter;
