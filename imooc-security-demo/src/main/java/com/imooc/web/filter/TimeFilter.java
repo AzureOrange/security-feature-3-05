@@ -11,7 +11,7 @@ import java.io.IOException;
  * 		不足：拿不到处理请求方法的信息
  *
  */
-@Component
+//@Component  // 临时注掉
 public class TimeFilter implements Filter {
 
 

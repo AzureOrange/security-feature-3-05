@@ -11,6 +11,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:1.5.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
     <orderEntry type="module" module-name="imooc-security-browser" />
     <orderEntry type="module" module-name="imooc-security-core" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-oauth2:1.2.1.RELEASE" level="project" />

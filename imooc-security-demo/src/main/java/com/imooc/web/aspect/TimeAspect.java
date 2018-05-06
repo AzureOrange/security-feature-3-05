@@ -14,8 +14,8 @@ import java.util.Date;
  * 	拦截器执行顺序：Filter --> Interceptor -->  ControllerAdvice(自定义异常)  -->  Aspect -->  Controller
  *
  */
-@Aspect
-@Component
+//@Aspect  // 临时注掉
+//@Component  // 临时注掉
 public class TimeAspect {
 
 	//	@Before()
