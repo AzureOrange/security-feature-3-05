@@ -1,10 +1,7 @@
-/**
- * 
- */
 package com.imooc.security.core.validate.code.sms;
 
 /**
- * @author zhailiang
+ * 短信发送商
  *
  */
 public interface SmsCodeSender {

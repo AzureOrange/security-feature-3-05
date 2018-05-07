@@ -15,6 +15,8 @@ public interface ValidateCodeProcessor {
 	
 	/**
 	 * 创建校验码
+	 * 	注意：ServletWebRequest包含了request和response
+	 *
 	 * @param request
 	 * @throws Exception
 	 */

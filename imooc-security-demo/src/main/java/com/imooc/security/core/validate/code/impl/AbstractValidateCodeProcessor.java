@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.imooc.security.core.validate.code.impl;
 
 import com.imooc.security.core.validate.code.ValidateCode;
@@ -15,7 +12,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 import java.util.Map;
 
 /**
- * @author zhailiang
+ * 封装
  *
  */
 public abstract class AbstractValidateCodeProcessor<C extends ValidateCode> implements ValidateCodeProcessor {

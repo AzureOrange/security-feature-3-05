@@ -10,7 +10,7 @@ import com.imooc.security.core.validate.code.ValidateCode;
 import com.imooc.security.core.validate.code.ValidateCodeGenerator;
 
 /**
- * 生成短信码
+ * 短信验证码的生成器
  *
  */
 @Component("smsCodeGenerator")
