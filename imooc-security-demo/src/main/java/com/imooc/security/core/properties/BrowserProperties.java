@@ -8,6 +8,9 @@ public class BrowserProperties {
 
 	private String loginPage = "/imooc-signIn.html";
 
+	// 缓存登录信息时间
+	private int rememberMeSeconds = 60;
+
 	private LoginType loginType = LoginType.JSON;
 
 	public String getLoginPage() {
@@ -24,6 +27,14 @@ public class BrowserProperties {
 
 	public void setLoginType(LoginType loginType) {
 		this.loginType = loginType;
+	}
+
+	public int getRememberMeSeconds() {
+		return rememberMeSeconds;
+	}
+
+	public void setRememberMeSeconds(int rememberMeSeconds) {
+		this.rememberMeSeconds = rememberMeSeconds;
 	}
 	
 }

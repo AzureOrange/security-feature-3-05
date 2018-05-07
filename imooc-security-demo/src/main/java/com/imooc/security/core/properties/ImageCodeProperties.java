@@ -1,10 +1,7 @@
-/**
- * 
- */
 package com.imooc.security.core.properties;
 
 /**
- * @author zhailiang
+ *
  *
  */
 public class ImageCodeProperties {

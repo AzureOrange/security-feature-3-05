@@ -1,10 +1,7 @@
 package com.imooc.web.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.*;
-import org.springframework.stereotype.Component;
-
-import java.util.Date;
+import org.aspectj.lang.annotation.Around;
 
 /**
  * 拦截配置：切片
@@ -32,14 +29,14 @@ public class TimeAspect {
 			System.out.println("入参 ：arg is "+arg);
 		}
 		
-		long start = new Date().getTime();
+		long start = System.currentTimeMillis();
 
 		// 执行请求  并返回请求的结果
 		Object object = pjp.proceed();
 
 		System.out.printf("执行结果：---" + object);
 		
-		System.out.println("time aspect 耗时:"+ (new Date().getTime() - start));
+		System.out.println("time aspect 耗时:"+ (System.currentTimeMillis() - start));
 		
 		System.out.println("time aspect end");
 		
