@@ -79,7 +79,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
 				.authorizeRequests()
 				.antMatchers("/authentication/require",
 						securityProperties.getBrowser().getLoginPage(),
-						"/code/image").permitAll()  // 过滤掉登录地址、登录界面与图片验证码
+						"/code/*").permitAll()  // 过滤掉登录地址、登录界面与图片验证码
 				.anyRequest()
 				.authenticated()   // 需要认证
 				.and()
